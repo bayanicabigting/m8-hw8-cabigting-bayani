@@ -131,3 +131,33 @@ footer {
   padding: 24px 0;
   color: var(--off-white);
 }
+
+@media screen and (max-width: 500px) {
+  header > nav {
+     flex-direction: column;
+     text-align: center;
+  }
+  header > nav > a.logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  header > nav > a:not(:first-of-type){
+    margin-left: 0px;
+  }
+  main article {
+    padding: 5px 5px;
+  }
+  section.hero > .call-to-action {
+    font-size: 1.5rem;
+  }
+  main > article img {
+    float: none;
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  main > section, main > article {
+    margin-bottom: 5px;
+  }
+}
